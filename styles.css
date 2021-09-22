@@ -1,0 +1,80 @@
+#container {
+    display: grid;
+    grid-template-rows: 200px 1fr 300px;
+    grid-template-columns: 1fr 90px 90px 90px;
+    height: 100%;
+    /* align-content: space-between; */
+    border-color:yellow;
+    border-style: solid;
+    height: 100vh;
+}
+
+.box {
+    /* justify-content: center; */
+    border-color: blue;
+    border-style: solid;
+    text-align: center;
+}
+
+#box1 {
+    /* justify-content: center; */
+    grid-row: 1/ span 1;
+    grid-column: 1/ span 4;
+}
+
+#box2 {
+    /* justify-content: center; */
+    grid-row: 2/ span 1;
+    grid-column: 1/ span 1;
+    /* background-color: #909090; */
+    text-align: center;
+}
+
+#box3 {
+    /* justify-content: center; */
+    grid-row: 3/ span 1;
+    grid-column: 1/ span 4;
+    background-color: lightgreen;
+}
+
+#title {
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#noPendingTasks {
+    font-size: 90px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#taskNameTitle {
+    font-size: 60pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#taskNameSubmit {
+    border: solid;
+    border-radius: 10px;
+    height: 50pt;
+    width: 90%;
+    font-size:30pt;
+}
+
+#submitTask {
+    border:solid;
+    margin-top: 30px;
+    font-size: 30pt;
+    color: green;
+}
+
+#taskItem {
+    font-size: 40pt;
+    list-style-type: none;
+}
+
+.taskItemName {
+    font-size: 40pt;
+    border: solid;
+    border-color: lightpink;
+}
