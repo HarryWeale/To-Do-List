@@ -1,77 +1,63 @@
 #container {
     display: grid;
-    grid-template-rows: 200px 1fr 300px;
+    grid-template-rows: 40px 160px 1fr 150px;
     grid-template-columns: 1fr 60px 60px 60px;
     height: 100%;
-    /* align-content: space-between; */
-    border-color:yellow;
-    border-style: solid;
     height: 100vh;
 }
 
 .box {
-    /* justify-content: center; */
-    border-color: blue;
-    border-style: solid;
     text-align: center;
+}
+
+#box0 {
+  grid-row: 1/ span 1;
+  grid-column: 1/ span 4;
 }
 
 #box1 {
-    /* justify-content: center; */
-    grid-row: 1/ span 1;
-    grid-column: 1/ span 4;
-}
-
-#emptyBox2 {
-    /* justify-content: center; */
     grid-row: 2/ span 1;
     grid-column: 1/ span 4;
-    /* background-color: #909090; */
-    text-align: center;
 }
 
 #box2 {
-    /* justify-content: center; */
-    grid-row: 2/ span 1;
+    grid-row: 3/ span 1;
     grid-column: 1/ span 1;
     /* background-color: #909090; */
     text-align: center;
 }
 
-#box2 {
-  /* justify-content: center; */
-  grid-row: 2/ span 1;
-  grid-column: 1/ span 1;
-  /* background-color: #909090; */
+#emptyBox2 {
+  grid-row: 3/ span 1;
+  grid-column: 1/ span 4;
   text-align: center;
 }
-
 #completeTaskColumn{
-  grid-row: 2/ span 1;
+  grid-row: 3/ span 1;
   grid-column: 2/ span 1;
   text-align: center;
 }
 
 #deleteTaskColumn {
-  grid-row: 2/ span 1;
-  grid-column: 3/ span 1;
+  grid-row: 3/ span 1;
+  grid-column: 4/ span 1;
   text-align: center;
 }
 
 #editTaskColumn {
-  grid-row: 2/ span 1;
-  grid-column: 4/span 1;
+  grid-row: 3/ span 1;
+  grid-column: 3/span 1;
   text-align: center;
 }
 
 #box3 {
     /* justify-content: center; */
-    grid-row: 3/ span 1;
+    grid-row: 4/ span 1;
     grid-column: 1/ span 4;
 }
 
 #title {
-    font-size: 60px;
+    font-size: 45px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
@@ -87,11 +73,10 @@
 }
 
 #taskNameSubmit {
-    border: solid;
     border-radius: 10px;
     height: 50pt;
-    width: 90%;
-    font-size:30pt;
+    width: 95%;
+    font-size: 25pt;
 }
 
 #submitTask {
@@ -110,19 +95,28 @@
 
 .taskItemName {
     font-size: 15pt;
-    border: solid;
-    border-color: lightpink;
 }
+
+.selectedTaskName {
+  font-size: 15pt;
+  background-color: green;
+}
+
 
 .selectedButton {
   font-size: 15pt;
-  border: solid;
-  border-color: lightpink;
   background-color: green;
 }
 
 .unSelectedButton {
   font-size: 15pt;
-  border: solid;
-  border-color: lightpink;
+}
+
+.selectedDeleteButton {
+  font-size: 15pt;
+  background-color: red;
+}
+
+#confirmationStatement {
+  font-size: 20pt;
 }
