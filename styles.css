@@ -1,7 +1,7 @@
 #container {
     display: grid;
     grid-template-rows: 200px 1fr 300px;
-    grid-template-columns: 1fr 90px 90px 90px;
+    grid-template-columns: 1fr 60px 60px 60px;
     height: 100%;
     /* align-content: space-between; */
     border-color:yellow;
@@ -22,6 +22,14 @@
     grid-column: 1/ span 4;
 }
 
+#emptyBox2 {
+    /* justify-content: center; */
+    grid-row: 2/ span 1;
+    grid-column: 1/ span 4;
+    /* background-color: #909090; */
+    text-align: center;
+}
+
 #box2 {
     /* justify-content: center; */
     grid-row: 2/ span 1;
@@ -30,11 +38,36 @@
     text-align: center;
 }
 
+#box2 {
+  /* justify-content: center; */
+  grid-row: 2/ span 1;
+  grid-column: 1/ span 1;
+  /* background-color: #909090; */
+  text-align: center;
+}
+
+#completeTaskColumn{
+  grid-row: 2/ span 1;
+  grid-column: 2/ span 1;
+  text-align: center;
+}
+
+#deleteTaskColumn {
+  grid-row: 2/ span 1;
+  grid-column: 3/ span 1;
+  text-align: center;
+}
+
+#editTaskColumn {
+  grid-row: 2/ span 1;
+  grid-column: 4/span 1;
+  text-align: center;
+}
+
 #box3 {
     /* justify-content: center; */
     grid-row: 3/ span 1;
     grid-column: 1/ span 4;
-    background-color: lightgreen;
 }
 
 #title {
@@ -49,7 +82,7 @@
 }
 
 #taskNameTitle {
-    font-size: 60pt;
+    font-size: 45pt;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -65,7 +98,9 @@
     border:solid;
     margin-top: 30px;
     font-size: 30pt;
-    color: green;
+    color: white;
+    background-color: green;
+    border-radius: 10px;
 }
 
 #taskItem {
@@ -74,7 +109,20 @@
 }
 
 .taskItemName {
-    font-size: 40pt;
+    font-size: 15pt;
     border: solid;
     border-color: lightpink;
+}
+
+.selectedButton {
+  font-size: 15pt;
+  border: solid;
+  border-color: lightpink;
+  background-color: green;
+}
+
+.unSelectedButton {
+  font-size: 15pt;
+  border: solid;
+  border-color: lightpink;
 }
