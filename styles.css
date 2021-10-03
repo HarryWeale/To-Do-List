@@ -1,0 +1,122 @@
+#container {
+    display: grid;
+    grid-template-rows: 40px 160px 1fr 150px;
+    grid-template-columns: 1fr 60px 60px 60px;
+    height: 100%;
+    height: 100vh;
+}
+
+.box {
+    text-align: center;
+}
+
+#box0 {
+  grid-row: 1/ span 1;
+  grid-column: 1/ span 4;
+}
+
+#box1 {
+    grid-row: 2/ span 1;
+    grid-column: 1/ span 4;
+}
+
+#box2 {
+    grid-row: 3/ span 1;
+    grid-column: 1/ span 1;
+    /* background-color: #909090; */
+    text-align: center;
+}
+
+#emptyBox2 {
+  grid-row: 3/ span 1;
+  grid-column: 1/ span 4;
+  text-align: center;
+}
+#completeTaskColumn{
+  grid-row: 3/ span 1;
+  grid-column: 2/ span 1;
+  text-align: center;
+}
+
+#deleteTaskColumn {
+  grid-row: 3/ span 1;
+  grid-column: 4/ span 1;
+  text-align: center;
+}
+
+#editTaskColumn {
+  grid-row: 3/ span 1;
+  grid-column: 3/span 1;
+  text-align: center;
+}
+
+#box3 {
+    /* justify-content: center; */
+    grid-row: 4/ span 1;
+    grid-column: 1/ span 4;
+}
+
+#title {
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#noPendingTasks {
+    font-size: 90px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#taskNameTitle {
+    font-size: 45pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#taskNameSubmit {
+    border-radius: 10px;
+    height: 50pt;
+    width: 95%;
+    font-size: 25pt;
+}
+
+#submitTask {
+    border:solid;
+    margin-top: 30px;
+    font-size: 30pt;
+    color: white;
+    background-color: green;
+    border-radius: 10px;
+}
+
+#taskItem {
+    font-size: 40pt;
+    list-style-type: none;
+}
+
+.taskItemName {
+    font-size: 15pt;
+}
+
+.selectedTaskName {
+  font-size: 15pt;
+  background-color: green;
+}
+
+
+.selectedButton {
+  font-size: 15pt;
+  background-color: green;
+}
+
+.unSelectedButton {
+  font-size: 15pt;
+}
+
+.selectedDeleteButton {
+  font-size: 15pt;
+  background-color: red;
+}
+
+#confirmationStatement {
+  font-size: 20pt;
+}
